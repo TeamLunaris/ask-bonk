@@ -1,8 +1,9 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "ask-bonk",
-  "account_id": "e29a829100e2bcccedf6027e4a970cb2",
-  "workers_dev": true,
+  "name": "lunaris-bonk",
+  "account_id": "baab7ce06bd920762c769417436615b6",
+  "workers_dev": false,
+  "routes": [{ "pattern": "bonk.lunaris.sh", "custom_domain": true }],
   "main": "src/index.ts",
   "compatibility_date": "2026-06-16",
   "rules": [
@@ -22,13 +23,13 @@
   },
   "vars": {
     // Account used by the public Analytics Engine-backed /stats endpoint
-    "CLOUDFLARE_ACCOUNT_ID": "e29a829100e2bcccedf6027e4a970cb2",
+    "CLOUDFLARE_ACCOUNT_ID": "baab7ce06bd920762c769417436615b6",
     // Default model for OpenCode sessions
-    "DEFAULT_MODEL": "opencode/claude-opus-4-5",
+    "DEFAULT_MODEL": "anthropic/claude-opus-5-5",
     "BONK_VERSION": "dev",
     "BONK_COMMIT": "unknown",
     // Allowed orgs/users for GitHub App installation
-    "ALLOWED_ORGS": ["elithrar", "cloudflare", "ask-bonk", "replicate", "emdash-cms", "Cloudflare-Studio"],
+    "ALLOWED_ORGS": ["TeamLunaris"],
   },
   "secrets": {
     "required": ["GITHUB_APP_ID", "GITHUB_APP_PRIVATE_KEY", "GITHUB_WEBHOOK_SECRET"],
@@ -66,7 +67,7 @@
   "kv_namespaces": [
     {
       "binding": "APP_INSTALLATIONS",
-      "id": "8209c24d2f364196b1cdbad3654694f1",
+      "id": "89bb25021a7149ddb0097497f7e7f300",
     },
   ],
   // Rate limiter for issues events from non-write users: 5 requests per minute

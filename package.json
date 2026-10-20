@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "flue build --target cloudflare",
-    "deploy": "flue build --target cloudflare && wrangler deploy --config dist/ask_bonk/wrangler.json --var BONK_VERSION:\"$(git describe --tags --always)\" --var BONK_COMMIT:\"$(git rev-parse --short HEAD)\"",
+    "deploy": "flue build --target cloudflare && wrangler deploy --config dist/lunaris_bonk/wrangler.json --var BONK_VERSION:\"$(git describe --tags --always)\" --var BONK_COMMIT:\"$(git rev-parse --short HEAD)\"",
     "dev": "flue dev --target cloudflare",
     "test": "vitest",
     "typecheck:action": "tsc --noEmit -p tsconfig.github-action.json",

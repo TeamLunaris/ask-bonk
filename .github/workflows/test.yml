@@ -38,4 +38,4 @@ jobs:
         run: bunx wrangler types --check
 
       - name: Validate generated Worker config
-        run: bunx wrangler deploy --dry-run --config dist/ask_bonk/wrangler.json --var BONK_VERSION:ci --var BONK_COMMIT:${GITHUB_SHA}
+        run: bunx wrangler deploy --dry-run --config dist/lunaris_bonk/wrangler.json --var BONK_VERSION:ci --var BONK_COMMIT:${GITHUB_SHA}
