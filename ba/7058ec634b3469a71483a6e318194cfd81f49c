@@ -1,0 +1,33 @@
+wrangler.jsonc
+  s_a5df0470b7d9ef::t_8a0890ccbfc271 5-6
+  s_a5df0470b7d9ef::t_c779203634e90a 26
+  s_a5df0470b7d9ef::t_446747ea5bb2c9 28
+  s_a5df0470b7d9ef::t_6fe3e61b301690 4
+  s_a5df0470b7d9ef::t_ef0a13ee15f2a7 32
+  s_a5df0470b7d9ef::t_ef6f2a9242682c 70
+  s_a5df0470b7d9ef::t_78e000040e614a 3
+mise.toml
+  s_a5df0470b7d9ef::t_866ac0f2939570 1-3
+.github/workflows/test.yml
+  s_a5df0470b7d9ef::t_056e7f43023933 41
+package.json
+  s_a5df0470b7d9ef::t_4300662b0baf0c 12
+worker-configuration.d.ts
+  s_a5df0470b7d9ef::t_97ef650e2bc415 2,8-9,12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ba7058ec634b3469a71483a6e318194cfd81f49c",
+  "prompts": {},
+  "sessions": {
+    "s_a5df0470b7d9ef": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "88e3a58d-02a2-4371-9e3d-17baf74aa202",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "NexPB <1289189+NexPB@users.noreply.github.com>"
+    }
+  }
+}
